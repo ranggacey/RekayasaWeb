@@ -19,7 +19,7 @@ $data = json_decode($send, TRUE);
     // Display the table
     echo "<table border='1' cellpadding='10' cellspacing='0'>";
     echo "<tr>
-            <th>ID Wisata</th>
+            
             <th>Kota</th>
             <th>Landmark</th>
             <th>Tarif</th>
@@ -27,7 +27,7 @@ $data = json_decode($send, TRUE);
 
     foreach($data as $row){
         echo "<tr>";
-        echo "<td>" . htmlspecialchars($row["id_wisata"]) . "</td>";
+       
         echo "<td>" . htmlspecialchars($row["kota"]) . "</td>";
         echo "<td>" . htmlspecialchars($row["landmark"]) . "</td>";
         echo "<td>" . htmlspecialchars($row["tarif"]) . "</td>";
