@@ -9,14 +9,14 @@ function curl($url){
     return $output;
 }
 
-// Call the API
+
 $send = curl("https://localhost/RekayasaWeb/getwisata.php");
 
-// Decode the JSON response
+
 $data = json_decode($send, TRUE);
 
 
-    // Display the table
+
     echo "<table border='1' cellpadding='10' cellspacing='0'>";
     echo "<tr>
             
